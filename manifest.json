@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Math Gatekeeper",
+  "permissions": ["activeTab"],
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["Content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["integral1.png", "integral2.png", "integral3.png"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

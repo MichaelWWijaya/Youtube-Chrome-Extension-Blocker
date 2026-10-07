@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <form action="/action_page.php">
+        <p>Please select how many seconds you want this question to pop up again:</p>
+        <input type="radio" id="time1" name="repeat_time" value=5>
+        <label for="time1">5</label><br>
+        <input type="radio" id="time2" name="repeat_time" value=10>
+        <label for="time2">10</label><br>
+        <input type="radio" id="time3" name="repeat_time" value=15>
+        <label for="time3">15</label>
+
+        <button type="button" onclick="set_timer()">Submit</button>
+        <p id="timerResult">Result is</p>
+
+        <!-- <button type="button" onclick="enter()">Submit</button> -->
+        <!-- <script src="Content.js"></script>
+        <script>
+            set_timer();
+        </script> -->
+
+
+        <script type="module">
+        import { set_timer } from './Content.js';
+        set_timer();
+        </script>
+
+        <br>  
+
+        </form>
+
+    </body>
+</html>
